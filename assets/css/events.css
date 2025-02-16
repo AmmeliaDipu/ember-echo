@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'StylishCalligraphy';
+    src: url('../fonts/StylishCalligraphyDemo-XPZZ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F0E1;
+    color: #1B4D3E;
+    padding-top: 56px;
+}
+
+.navbar {
+    background-color: #1B4D3E;
+    height: 65px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 12px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.navbar-nav .nav-item {
+    list-style: none;
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #C9A46C;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('../images/events-hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1{
+    font-family: 'StylishCalligraphy', sans-serif !important;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+h2 {
+    font-family: 'StylishCalligraphy', sans-serif !important;
+    font-weight: bold;
+    color: #1B4D3E;
+}
+
+.section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.events-overview h2 {
+    font-size: 2.5rem;
+    color: #1B4D3E;
+}
+
+.events-overview p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.corporate-events {
+    background: url('../images/corporate-events-bg.jpg') no-repeat center center/cover;
+}
+
+.workshops {
+    background: url('../images/workshops-bg.jpg') no-repeat center center/cover;
+}
+
+.sustainable-events {
+    background: url('../images/sustainable-events-bg.jpg') no-repeat center center/cover;
+}
+
+
+.events-section {
+    padding: 80px 0;
+    position: relative;
+    background-size: cover;
+}
+
+.events-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 0;
+}
+
+.events-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.events-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.events-section .text-content {
+    max-width: 500px;
+    margin-left: 40px;
+    color: white;
+}
+
+.events-section h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.events-section p {
+    font-size: 1.1rem;
+}
+
+.events-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events-section ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: white;
+    padding-left: 20px;
+    position: relative;
+}
+
+.events-section ul li::before {
+    content: "•";
+    color: #C9A46C;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cta {
+    background: #E8DED1;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    color: #1B4D3E;
+}
+
+.cta p {
+    font-size: 1.2rem;
+}
+
+.btn-custom {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    background: #C9A46C;
+    color: white;
+    border: 2px solid #C9A46C;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn-custom:hover {
+    background: white;
+    color: #1B4D3E;
+    border: 2px solid #1B4D3E;
+}
+
+.footer {
+    background-color: #1B4D3E;
+    color: #F5F0E1;
+    text-align: center;
+    padding: 30px 0;
+}
